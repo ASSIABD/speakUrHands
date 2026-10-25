@@ -77,6 +77,12 @@ docker run --rm -it \
 
 - **Java**: OpenJDK 17 or 21
 - **JavaFX**: JavaFX 17 or 21 SDK
+  - Download from: https://gluonhq.com/products/javafx/
+  - Extract to a local directory (e.g., `C:\javafx-sdk-17`)
+  - Set `JAVAFX_HOME` environment variable to the extracted path, or update the path in `run.bat`
+- **JFoenix**: JFoenix 9.0.10 library
+  - Download from: https://github.com/jfoenixadmin/JFoenix/releases
+  - Add `jfoenix-9.0.10.jar` to your classpath
 - **Python**: 3.10 or 3.11 with:
   ```bash
   pip install -r requirements.txt
