@@ -1,10 +1,10 @@
-# Speak Your Hands 🖐️
+# Speak Your Hands 
 
 An interactive desktop application for real-time **American Sign Language (ASL)** gesture detection and translation, built with **JavaFX** and **Python (TensorFlow / OpenCV)**.
 
 ---
 
-## ✨ Features
+##  Features
 
 - **Real-Time ASL Detection**: Captures webcam video, recognizes signs, and translates letters in real time.
 - **Center Guide Box**: Built-in visual alignment box ("Place Hand Here") for consistent framing and high accuracy.
@@ -14,7 +14,7 @@ An interactive desktop application for real-time **American Sign Language (ASL)*
 
 ---
 
-## 🚀 Running the Project
+## Running the Project
 
 ### Option A: Quick Run on Windows (No Setup Required)
 
@@ -65,7 +65,7 @@ docker run --rm -it \
 
 ---
 
-## 🧠 Model & Architecture
+##  Model & Architecture
 
 - **Base Architecture**: MobileNetV2 (fine-tuned on 26 ASL alphabet signs: A-Z).
 - **Communication Pipeline**: JavaFX executes the Python backend as a child process. Python streams 30 FPS JPEG frames (Base64-encoded) and prediction strings via standard I/O pipes.
@@ -73,7 +73,7 @@ docker run --rm -it \
 
 ---
 
-## 🛠️ Requirements
+##  Requirements
 
 - **Java**: OpenJDK 17 or 21
 - **JavaFX**: JavaFX 17 or 21 SDK
