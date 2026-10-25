@@ -1,0 +1,29 @@
+# Datasets and data files
+*.csv
+*.tsv
+data/
+datasets/
+*dataset*
+SigNN*
+
+# Large Docker exports and heavy archives (> 1 GB)
+*.tar
+*.tar.gz
+*.zip
+speakUrHands.tar
+speakurhands-1.0-SNAPSHOT.jar
+
+# Python cache & Jupyter checkpoints
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS and IDE temporary files
+desktop.ini
+Thumbs.db
+.DS_Store
+.settings/
