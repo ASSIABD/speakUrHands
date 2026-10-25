@@ -54,7 +54,7 @@ docker run --rm -it \
 
 ### Option C: Running from Eclipse IDE
 
-1. Import the project from `Mini_Projet_Java/Mini_Projet_Java/Code_Source`.
+1. Import the project into Eclipse from the root folder (it contains `.project` and `.classpath`).
 2. Add JavaFX SDK to the project build path.
 3. In **Run Configurations** -> **Arguments** -> **VM arguments**, enter:
    ```text
@@ -69,7 +69,7 @@ docker run --rm -it \
 
 - **Base Architecture**: MobileNetV2 (fine-tuned on 26 ASL alphabet signs: A-Z).
 - **Communication Pipeline**: JavaFX executes the Python backend as a child process. Python streams 30 FPS JPEG frames (Base64-encoded) and prediction strings via standard I/O pipes.
-- **Weights File**: `Mini_Projet_Java/Mini_Projet_Java/Code_Source/training/best_model.keras`.
+- **Weights File**: `training/best_model.keras`.
 
 ---
 

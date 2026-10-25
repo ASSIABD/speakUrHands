@@ -37,10 +37,10 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
-# Copy packaged JAR, recognition script, and trained model
-COPY Mini_Projet_Java/Mini_Projet_Java/Code_Source/SpeakUrHands.jar app.jar
-COPY Mini_Projet_Java/Mini_Projet_Java/Code_Source/src/controllers/asl_recognition.py ./asl_recognition.py
-COPY Mini_Projet_Java/Mini_Projet_Java/Code_Source/training/best_model.keras ./best_model.keras
+# Copy packaged JAR, source controllers, and trained model
+COPY SpeakUrHands.jar app.jar
+COPY src/ ./src/
+COPY training/ ./training/
 
 ENV DISPLAY=:0
 
